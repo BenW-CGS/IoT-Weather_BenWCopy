@@ -4,53 +4,20 @@
 
 ![Yellow-Umbrella](public/assets/yellow-umbrella.png)
 
+### Background
+
+This repository contains all work done for the IT assessment. Much of the project is from the work done in class, following Mr Z as he worked on the screen. I hope to improve the app, so that it also calculates fire risk, and keeps track of daily, weekly, and all-time high and low temperatures.
+
 ### Development Roadmap
 
 - [x] Setup repos - GitHub
 - [x] setup ESP32 - Arduino IDE
 - [x] Install dependencies - aREST.h and DHT.h
-- [x] Test ESP32 - get json data via wifi
-- [x] Initialize Node.js environment
-- [x] setup server.js with express
+- [ ] Test ESP32 - get json data via wifi
+- [ ] Initialize Node.js environment
+- [ ] setup server.js with express
 - [ ] set index route and views
 - [ ] link ESP32 to Node app with fetch
-
-### Initializing a Node.js Environment
-
-1. Ensure that Node.js and NPM are installed on your system:
-    > node --version
-
-    > npm --version
-
-2. In terminal, inside the project directory:
-    > npm init -y
-
-3. This will add a package.json file
-
-4. Install dependencies
-    > npm install express ejs express-ejs-layouts
-
-5. Install development dependencies
-    > npm install --save-dev dotenv nodemon
-
-
-### Initializing a Node.js Environment
-
-1. Ensure that Node.js and NPM are installed on your system:
-    > node --version
-
-    > npm --version
-
-2. In terminal, inside the project directory:
-    > npm init -y
-
-3. This will add a package.json file
-
-4. Install dependencies
-    > npm install express ejs express-ejs-layouts
-
-5. Install development dependencies
-    > npm install --save-dev dotenv nodemon
 
 ### Worklog and Commits
 
