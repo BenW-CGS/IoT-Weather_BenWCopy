@@ -4,6 +4,8 @@
 
 ![Yellow-Umbrella](public/assets/yellow-umbrella.jpg)
 
+This project is for the IT assignment. The setup was really just taking Mr Z's work, and trying to show understanding and change it to make it my own. To do this, I added a variable, Fire Index (Which I made up), and can be used to access current data about temperature, humidity, and an entirely fake fire index. The purpose of the website is to present data in a nice way that makes it easy to see.
+
 ### Development Roadmap
 
 - [x] Setup repos - GitHub
