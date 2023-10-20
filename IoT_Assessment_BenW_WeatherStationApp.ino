@@ -43,6 +43,7 @@ float temperature;
 float humidity;
 char* location = "ACT";
 int timer = 72000;
+float fireindex;
 
 // Declare functions to be exposed to the API
 int ledControl(String command);
@@ -63,6 +64,7 @@ void setup(void)
   rest.variable("temperature",&temperature);
   rest.variable("humidity",&humidity);
   rest.variable("location",&location);
+  rest.variable("fireindex",&fireindex);
     
   // Give name and ID to device
   rest.set_id("141");
@@ -104,12 +106,16 @@ void loop() {
   // Reading temperature and humidity
   temperature = dht.readTemperature();
   humidity = dht.readHumidity();
+  fireindex = 1 + sqrt(100 - humidity) + sqrt(temperature);
 
   // Prints data to serial.
   Serial.print("Temperature: ");
   Serial.println(temperature);
   Serial.print("Humidity: ");
   Serial.println(humidity);
+  //Fire index is my idea. See, I Do understand!
+  Serial.print("Benjamin's Fire Index: ");
+  Serial.println(fireindex);
   Serial.print("Timer: ");
   Serial.println(timer);
   if (temperature < 5){
