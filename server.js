@@ -2,7 +2,7 @@ if (process.env.NODE_ENV !== 'production') {
     require('dotenv').config()
 }
 //end of link. Which localhost to use.
-const port = 2606
+const port = 2608
 //Getting from modules.
 const express = require('express')
 const expressLayouts = require('express-ejs-layouts')
